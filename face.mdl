@@ -1,0 +1,36 @@
+constants shiny_purple 0.3 0.2 0.8 0.3 0 0 0.3 0.2 0.8
+constants shiny_teal 0.3 0.0 0.0 0.3 0.2 0.8 0.3 0.2 0.8
+
+push
+
+move 250 250 0
+rotate x 90
+box -170 0 0 340 10 18
+pop
+
+push
+move 250 250 0
+rotate z 90
+torus shiny_teal 0 -80 0 22 80
+pop
+
+push
+move 250 250 0
+rotate z 90
+torus shiny_teal 0 80 0 22 80
+pop
+
+push
+move 250 250 0
+rotate z 90
+torus shiny_purple 0 -120 0 20 50
+pop
+
+push
+move 250 250 0
+rotate z 90
+torus shiny_purple 0 120 0 20 50
+pop
+
+display
+save img.png
